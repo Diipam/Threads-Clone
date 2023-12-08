@@ -23,20 +23,11 @@ struct LoginView: View {
 
                 VStack(spacing: 20){
                     TextField("Enter your name", text: $email)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(15)
-                        .padding(.horizontal, 24)
+                        .modifier(ThreadsTextFieldModifier())
 
                     SecureField("Enter your password", text: $password)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(15)
-                        .padding(.horizontal, 24)
+                        .modifier(ThreadsTextFieldModifier())
                 }
-                
 
                 NavigationLink{
                     Text("Forgot Password")
@@ -54,12 +45,7 @@ struct LoginView: View {
 
                 } label: {
                     Text("Login")
-                        .font(.headline)
-                        .fontWeight(.bold)
-                        .foregroundStyle(.white)
-                        .frame(width: 350, height: 44)
-                        .background(.black)
-                        .cornerRadius(10)
+                        .modifier(ThreadlLoginSignInModifier())
                 }
 
                 Spacer()
