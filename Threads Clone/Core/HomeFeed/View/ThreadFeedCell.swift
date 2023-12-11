@@ -142,11 +142,7 @@ struct ThreadFeedCell: View {
 
 //MARK: Deepam DHakal
             HStack(alignment: .top, spacing: 12) {
-                Image("DeepamDhakal")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
+                CircularProfileImageView()
 
                 VStack(alignment: .leading, spacing: 5) {
                     HStack{
