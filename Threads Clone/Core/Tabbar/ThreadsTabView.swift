@@ -11,7 +11,7 @@ struct ThreadsTabView: View {
     @State private var selectedTab = 0
     var body: some View {
         TabView(selection: $selectedTab) {
-            HomeFeedView()
+            FeedView()
                 .tabItem {
                     Image(systemName: selectedTab == 0 ? "house.circle.fill" : "house")
                         .environment(\.symbolVariants, selectedTab == 0 ? .fill : .none)

@@ -12,6 +12,7 @@ struct Threads_CloneApp: App {
     var body: some Scene {
         WindowGroup {
            LoginView()
+                .preferredColorScheme(.light)
         }
     }
 }
