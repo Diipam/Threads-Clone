@@ -197,10 +197,11 @@
 			children = (
 				F3FDE27B2B23749A006E4603 /* App */,
 				F3FDE2782B237489006E4603 /* Core */,
-				F3FDE27E2B2374A4006E4603 /* Services */,
-				F3FDE27D2B2374A0006E4603 /* Utils */,
 				F3FDE27C2B23749B006E4603 /* Extension */,
 				F3FDE27A2B237497006E4603 /* Model */,
+				F3FDE27F2B23757A006E4603 /* Root */,
+				F3FDE27E2B2374A4006E4603 /* Services */,
+				F3FDE27D2B2374A0006E4603 /* Utils */,
 				F3FDE2522B23746D006E4603 /* Assets.xcassets */,
 				F3FDE2542B23746D006E4603 /* Preview Content */,
 			);
@@ -235,15 +236,14 @@
 		F3FDE2782B237489006E4603 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				F346399D2B276DD000968433 /* ReusableComponents */,
 				F34639952B26FEE300968433 /* Activity  */,
 				F3FDE2792B23748A006E4603 /* Authentication */,
 				F346398E2B26FE3100968433 /* Explore */,
 				F346398B2B26FDD800968433 /* HomeFeed */,
 				F34639942B26FEDE00968433 /* Profile */,
+				F346399D2B276DD000968433 /* ReusableComponents */,
 				F338FDAF2B23973E009864DA /* Tabbar */,
 				F34639912B26FE9C00968433 /* ThreadCreation */,
-				F3FDE27F2B23757A006E4603 /* Root */,
 			);
 			path = Core;
 			sourceTree = "<group>";

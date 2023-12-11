@@ -12,7 +12,7 @@ struct UserCell: View {
         HStack {
             CircularProfileImageView()
             VStack(alignment: .leading) {
-                Text("DpamFloyd")
+                Text("Dpam_Floyd")
                     .fontWeight(.bold)
                 Text("Deepam Dhakal")
             }

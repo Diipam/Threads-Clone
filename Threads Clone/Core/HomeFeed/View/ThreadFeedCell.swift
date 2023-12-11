@@ -146,7 +146,7 @@ struct ThreadFeedCell: View {
 
                 VStack(alignment: .leading, spacing: 5) {
                     HStack{
-                        Text("DpamFloyd")
+                        Text("Dpam_Floyd")
                             .font(.footnote)
                             .fontWeight(.semibold)
 
