@@ -7,267 +7,74 @@
 
 import SwiftUI
 
+struct FeedItemView: View {
+    var imageName: String
+    var username: String
+    var timeAgo: String
+    var postText: String
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 12) {
+            Image(imageName)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+                .clipShape(Circle())
+
+            VStack(alignment: .leading, spacing: 5) {
+                HStack {
+                    Text(username)
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+
+                    Spacer()
+
+                    Text(timeAgo)
+                        .font(.caption)
+                        .foregroundColor(Color(.systemGray3))
+
+                    Button {
+                        // Handle ellipsis button action
+                    } label: {
+                        Image(systemName: "ellipsis")
+                            .foregroundColor(Color(.darkGray))
+                    }
+                }
+
+                Text(postText)
+                    .font(.footnote)
+                    .multilineTextAlignment(.leading)
+
+                HStack {
+                    // Buttons for heart, bubble, arrow, paperplane
+                    ForEach(["heart", "bubble.right", "arrow.rectanglepath", "paperplane"], id: \.self) { systemName in
+                        Button {
+                            // Handle button action
+                        } label: {
+                            Image(systemName: systemName)
+                        }
+                    }
+                }
+                .foregroundStyle(.black)
+                .padding(.vertical, 8)
+            }
+        }
+        .padding(.horizontal)
+        Divider()
+    }
+}
+
 struct ThreadFeedCell: View {
     var body: some View {
-        VStack{
-//MARK: Aaayush Humagain
-            HStack(alignment: .top, spacing: 12) {
-                Image("AayushHumagain")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
+        VStack {
+            FeedItemView(imageName: "AayushHumagain", username: "Hanxy_Aayush", timeAgo: "10m", postText: "Jab tak suraj chand rahega, Me hamesa chakka rahunga")
 
-                VStack(alignment: .leading, spacing: 5) {
-                    HStack{
-                        Text("Hanxy_Aayush")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
+            FeedItemView(imageName: "AshimKharel", username: "Haddi_Ashim", timeAgo: "10m", postText: "Dharti Sunheri Amber Neela Mere Dost Aayush ka screw dheela")
 
-                        Spacer()
+            FeedItemView(imageName: "DeepamDhakal", username: "Dpam_Floyd", timeAgo: "5m", postText: "Call is in hold, My bro is very BOLD")
 
-                        Text("10m")
-                            .font(.caption)
-                            .foregroundColor(Color(.systemGray3))
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "ellipsis")
-                                .foregroundColor(Color(.darkGray))
-                        }
-                    }
-
-                        Text("Jab tak suraj chand rahega, Me hamesa chakka rahunga")
-                            .font(.footnote)
-                            .multilineTextAlignment(.leading)
-
-                    HStack{
-                        Button{
-
-                        } label: {
-                            Image(systemName: "heart")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "bubble.right")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "arrow.rectanglepath")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "paperplane")
-                        }
-
-                    }
-                    .foregroundStyle(.black)
-                    .padding(.vertical, 8)
-
-                }
-            }
-            Divider()
-
-//MARK: Ashim Kharel
-            HStack(alignment: .top, spacing: 12) {
-                Image("AshimKharel")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
-
-                VStack(alignment: .leading, spacing: 5) {
-                    HStack{
-                        Text("Haddi_Ashim")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
-
-                        Spacer()
-
-                        Text("10m")
-                            .font(.caption)
-                            .foregroundColor(Color(.systemGray3))
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "ellipsis")
-                                .foregroundColor(Color(.darkGray))
-                        }
-                    }
-
-                        Text("Dharti Sunheri Amber Neela Mere Dost Aayush ka screw dheela")
-                            .font(.footnote)
-                            .multilineTextAlignment(.leading)
-
-                    HStack{
-                        Button{
-
-                        } label: {
-                            Image(systemName: "heart")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "bubble.right")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "arrow.rectanglepath")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "paperplane")
-                        }
-
-                    }
-                    .foregroundStyle(.black)
-                    .padding(.vertical, 8)
-
-                }
-            }
-            Divider()
-
-//MARK: Deepam DHakal
-            HStack(alignment: .top, spacing: 12) {
-                CircularProfileImageView()
-
-                VStack(alignment: .leading, spacing: 5) {
-                    HStack{
-                        Text("Dpam_Floyd")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
-
-                        Spacer()
-
-                        Text("5m")
-                            .font(.caption)
-                            .foregroundColor(Color(.systemGray3))
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "ellipsis")
-                                .foregroundColor(Color(.darkGray))
-                        }
-                    }
-
-                        Text("Call is in hold, My bro is very BOLD")
-                            .font(.footnote)
-                            .multilineTextAlignment(.leading)
-
-                    HStack{
-                        Button{
-
-                        } label: {
-                            Image(systemName: "heart")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "bubble.right")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "arrow.rectanglepath")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "paperplane")
-                        }
-
-                    }
-                    .foregroundStyle(.black)
-                    .padding(.vertical, 8)
-
-                }
-            }
-            Divider()
-
-//MARK: Gaurav Sharma
-            HStack(alignment: .top, spacing: 12) {
-                Image("GauravSharma")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
-
-                VStack(alignment: .leading, spacing: 5) {
-                    HStack{
-                        Text("gaurav_sweety")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
-
-                        Spacer()
-
-                        Text("15m")
-                            .font(.caption)
-                            .foregroundColor(Color(.systemGray3))
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "ellipsis")
-                                .foregroundColor(Color(.darkGray))
-                        }
-                    }
-
-                        Text("Pulau ma hunxa jeera, ma ho kohinoor hira ")
-                            .font(.footnote)
-                            .multilineTextAlignment(.leading)
-
-                    HStack{
-                        Button{
-
-                        } label: {
-                            Image(systemName: "heart")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "bubble.right")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "arrow.rectanglepath")
-                        }
-
-                        Button{
-
-                        } label: {
-                            Image(systemName: "paperplane")
-                        }
-
-                    }
-                    .foregroundStyle(.black)
-                    .padding(.vertical, 8)
-
-                }
-            }
-            Divider()
+            FeedItemView(imageName: "GauravSharma", username: "gaurav_sweety", timeAgo: "15m", postText: "Pulau ma hunxa jeera, ma ho kohinoor hira")
         }
-        .padding()
-
     }
 }
 

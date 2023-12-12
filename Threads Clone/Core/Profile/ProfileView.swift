@@ -31,6 +31,8 @@ struct ProfileView: View {
                 Spacer()
 
                 CircularProfileImageView()
+
+//                MARK: 58 minutes
             }
         }
         .padding(.horizontal)
