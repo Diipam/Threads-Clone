@@ -2,7 +2,7 @@
 //  UserCell.swift
 //  Threads Clone
 //
-//  Created by Smart Solar Nepal on 11/12/2023.
+//  Created by Deepam Dhakal on 11/12/2023.
 //
 
 import SwiftUI
@@ -10,6 +10,7 @@ import SwiftUI
 struct UserCell: View {
     var body: some View {
         HStack {
+//            creating the circular image 
             CircularProfileImageView()
             VStack(alignment: .leading) {
                 Text("Dpam_Floyd")

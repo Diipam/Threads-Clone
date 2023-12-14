@@ -2,7 +2,7 @@
 //  Threads_CloneApp.swift
 //  Threads Clone
 //
-//  Created by Smart Solar Nepal on 08/12/2023.
+//  Created by Deepam Dhakal on 08/12/2023.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct Threads_CloneApp: App {
     var body: some Scene {
         WindowGroup {
-           LoginView()
+           ThreadsTabView()
                 .preferredColorScheme(.light)
         }
     }

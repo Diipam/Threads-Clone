@@ -18,6 +18,7 @@
 		F346399B2B27025900968433 /* ThreadFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346399A2B27025900968433 /* ThreadFeedCell.swift */; };
 		F346399F2B276DF200968433 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346399E2B276DF200968433 /* CircularProfileImageView.swift */; };
 		F34639A12B276EB200968433 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34639A02B276EB200968433 /* UserCell.swift */; };
+		F3EA0F1E2B2B3EF700F5C3D3 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EA0F1D2B2B3EF700F5C3D3 /* ProfileThreadFilter.swift */; };
 		F3FDE24F2B23746B006E4603 /* Threads_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDE24E2B23746B006E4603 /* Threads_CloneApp.swift */; };
 		F3FDE2512B23746B006E4603 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDE2502B23746B006E4603 /* ContentView.swift */; };
 		F3FDE2532B23746D006E4603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FDE2522B23746D006E4603 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		F346399A2B27025900968433 /* ThreadFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadFeedCell.swift; sourceTree = "<group>"; };
 		F346399E2B276DF200968433 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		F34639A02B276EB200968433 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		F3EA0F1D2B2B3EF700F5C3D3 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		F3FDE24B2B23746B006E4603 /* Threads Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Threads Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FDE24E2B23746B006E4603 /* Threads_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threads_CloneApp.swift; sourceTree = "<group>"; };
 		F3FDE2502B23746B006E4603 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F34639982B26FF1700968433 /* ProfileView.swift */,
+				F3EA0F1D2B2B3EF700F5C3D3 /* ProfileThreadFilter.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				F34639972B26FF0300968433 /* ActivityView.swift in Sources */,
 				F346399B2B27025900968433 /* ThreadFeedCell.swift in Sources */,
 				F346398D2B26FE1400968433 /* FeedView.swift in Sources */,
+				F3EA0F1E2B2B3EF700F5C3D3 /* ProfileThreadFilter.swift in Sources */,
 				F34639902B26FE9500968433 /* ExploreView.swift in Sources */,
 				F338FDAE2B2390F1009864DA /* ThreadlLoginSignInModifier.swift in Sources */,
 				F34639992B26FF1700968433 /* ProfileView.swift in Sources */,
@@ -627,7 +631,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "smartsolar.com.Threads-Clone";
+				PRODUCT_BUNDLE_IDENTIFIER = "deepamdhakal.com.Threads-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -661,7 +665,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "smartsolar.com.Threads-Clone";
+				PRODUCT_BUNDLE_IDENTIFIER = "deepamdhakal.com.Threads-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

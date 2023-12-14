@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
+//    putting state because the value of emaal and password can change frequently
     @State private var email = ""
     @State private var password = ""
     var body: some View {
@@ -24,9 +25,11 @@ struct LoginView: View {
                 VStack(spacing: 20){
                     TextField("Enter your name", text: $email)
                         .modifier(ThreadsTextFieldModifier())
+//                    creating modifer to simplify the code structure
 
                     SecureField("Enter your password", text: $password)
                         .modifier(ThreadsTextFieldModifier())
+//                    just using modifiers to edit or change the same field 
                 }
 
                 NavigationLink{

@@ -2,7 +2,7 @@
 //  HomeFeedThreadViewCell.swift
 //  Threads Clone
 //
-//  Created by Smart Solar Nepal on 11/12/2023.
+//  Created by Deepam Dhakal on 11/12/2023.
 //
 
 import SwiftUI
@@ -12,6 +12,7 @@ struct FeedItemView: View {
     var username: String
     var timeAgo: String
     var postText: String
+//    using struct feeditem because the field are used more often
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {

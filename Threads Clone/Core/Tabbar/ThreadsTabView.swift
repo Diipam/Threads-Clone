@@ -2,7 +2,7 @@
 //  ThreadsTabView.swift
 //  Threads Clone
 //
-//  Created by Smart Solar Nepal on 09/12/2023.
+//  Created by Deepam Dhakal on 09/12/2023.
 //
 
 import SwiftUI
