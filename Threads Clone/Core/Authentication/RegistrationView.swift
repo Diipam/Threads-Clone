@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct RegistrationView: View {
+
     @State private var firstName = ""
     @State private var lastName = ""
     @State private var email = ""
     @State private var password = ""
+    
     @Environment(\.dismiss) var dismiss
+
     var body: some View {
         VStack{
             Spacer()

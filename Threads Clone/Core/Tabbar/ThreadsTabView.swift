@@ -51,9 +51,11 @@ struct ThreadsTabView: View {
                 .onAppear{selectedTab = 4}
                 .tag(4)
         }
+// When the selectedTab changes, the provided closure is executed.It sets the value of showThreadCreationView to true if selectedTab is equal to 2, and false otherwise.
         .onChange(of: selectedTab, perform: { newValue in
             showThreadCreationView = selectedTab == 2
         })
+//        If showThreadCreationView is true, it presents the sheet with the content being the CreateThreadView(). When the sheet is dismissed, the onDismiss closure is executed, setting selectedTab back to 0.
         .sheet( isPresented: $showThreadCreationView,
                 onDismiss: {selectedTab = 0},
                 content: { CreateThreadView() }
